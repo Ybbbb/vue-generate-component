@@ -18,7 +18,6 @@ export default {
 
   }
 }
-
 {% else %}
 import {Component, Vue} from "vue-property-decorator";
 
@@ -26,6 +25,6 @@ import {Component, Vue} from "vue-property-decorator";
   components: {}
 })
 export default class {{ name | PascalCase }} extends Vue {
-
+  public created(): void {}
 }
 {% endif %}

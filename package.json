@@ -16,9 +16,11 @@
     "vue js",
     "vue js component",
     "vue js cli",
-    "vue js generator"
+    "vue js generator",
+    "vue generator",
+    "vue class component generator"
   ],
-  "author": "Netanel Basal <netanel7799@gmail.com>",
+  "author": "Netanel Basal <netanel7799@gmail.com>, ybbb",
   "license": "ISC",
   "bin": {
     "vgc": "dist/vgc.js"

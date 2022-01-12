@@ -1,0 +1,3 @@
+import {{name | PascalCase}} from './{{name}}';
+
+export default {{name | PascalCase}};
