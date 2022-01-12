@@ -35,14 +35,14 @@ export default class Footer extends Vue {}
 
 **footer.spec.ts**
 
-```javascript
+```typescript
 import Vue from "vue";
 import Footer from "./footer.vue";
 
 describe("Footer.vue", () => {});
 ```
 
-**footer.scss**
+**footer.scoped.scss**
 
 ```css
 .footer {
@@ -59,6 +59,14 @@ describe("Footer.vue", () => {});
 </template>
 <script src="./footer.ts" lang="ts"></script>
 <style src="./footer.scoped.scss" scoped lang="scss"></style>
+```
+
+**footer.vue.d.ts**
+
+```typescript
+import Footer from "./footer";
+
+export default Footer;
 ```
 
 ### Create new component single file
@@ -142,15 +150,16 @@ vgc footer --postfix page
 
 Will generate files with postfix:
 
-- footer.page.js
-- footer.page.css
-- footer.page.html
-- footer.page.spec.js
+- footer.page.ts
+- footer.page.scss
+- footer.page.vue
+- footer.page.vue.d.ts
+- footer.page.spec.ts
 
 ### Change the default file types for html, style, script, and spec
 
 ```bash
-sudo vgc --html jade --style less --script ts --spec ts
+sudo vgc --html jade --style less --script js --spec js
 ```
 
 ### Contribute
